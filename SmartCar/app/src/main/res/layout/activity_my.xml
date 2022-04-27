@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conectar"
+        android:id="@+id/btnConnect"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encender"
+        android:id="@+id/btnEngine"
+        android:layout_below="@+id/btnConnect"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sbAcel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnEngine"
+        android:max="9"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Value"
+        android:id="@+id/txtAcel"
+        android:layout_alignBottom="@+id/sbAcel"
+        android:layout_toEndOf="@+id/sbAcel" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relay 1"
+        android:id="@+id/btnRelay1"
+        android:layout_marginTop="68dp"
+        android:checked="false"
+        android:layout_below="@+id/btnEngine"
+        android:layout_toEndOf="@+id/btnEngine" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relay 2"
+        android:id="@+id/btnRelay2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/btnRelay1"
+        android:checked="false" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relay 3"
+        android:id="@+id/btnRelay3"
+        android:layout_below="@+id/btnRelay2"
+        android:layout_alignStart="@+id/btnRelay2"
+        android:checked="false" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relay 4"
+        android:id="@+id/btnRelay4"
+        android:layout_below="@+id/btnRelay3"
+        android:layout_alignStart="@+id/btnRelay3"
+        android:checked="false" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relay 5"
+        android:id="@+id/btnRelay5"
+        android:layout_below="@+id/btnRelay4"
+        android:layout_alignStart="@+id/btnRelay4"
+        android:checked="false" />
+
+</RelativeLayout>
